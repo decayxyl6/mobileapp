@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Ads Manager - Apps on Google Play</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="46,0 466,256 46,512" fill="#34a853"/>
+      <polygon points="46,0 256,256 46,512" fill="#4285f4"/>
+      <polygon points="46,0 466,256 256,256" fill="#fbbc04"/>
+      <polygon points="256,256 466,256 46,512" fill="#ea4335"/>
+    </svg>
+    <span>Google Play</span>
+  </a>
+  <div class="nav-icons">
+    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+    <div style="width:28px;height:28px;border-radius:50%;background:#1877f2;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;cursor:pointer;">M</div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="#">Home</a><span>›</span>
+  <a href="#">Apps</a><span>›</span>
+  <a href="#">Business</a><span>›</span>
+  <span>Meta Ads Manager</span>
+</div>
+
+<div class="container">
+
+  <!-- ── DESKTOP LAYOUT WRAPPER ── -->
+  <div class="app-layout">
+    <div class="main-col">
+
+      <!-- APP HEADER -->
+      <div class="app-header">
+        <div class="app-icon-svg">
+          <img src="assets/app-icon.webp" width="88" height="88" />
+        </div>
+        <div class="app-info">
+          <div class="app-name">Meta Ads Manager</div>
+          <div class="app-dev">Meta Platforms, Inc.</div>
+          <div class="app-category">Business · Advertising</div>
+        </div>
+      </div>
+
+      <!-- STATS ROW -->
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-value">
+            4.7
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <div class="stat-label">507K reviews</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">10M+</div>
+          <div class="stat-label">Downloads</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value"><span class="rating-badge">3+</span></div>
+          <div class="stat-label">Rated for 3+</div>
+        </div>
+      </div>
+
+      <!-- INSTALL BUTTON & ACTIONS (mobile / left col on desktop) -->
+      <div class="install-area" style="margin-bottom:20px;">
+        <button class="install-btn" id="installBtn" data-apk-path="assets/downloads/app-release.apk" onclick="handleInstall()">Install</button>
+        <div class="action-links">
+          <a href="#" class="action-link" onclick="handleShare(event)">
+            <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+            Share
+          </a>
+          <a href="#" class="action-link" onclick="handleWishlist(event)">
+            <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/></svg>
+            Add to wishlist
+          </a>
+        </div>
+        <div class="device-note">
+          <svg viewBox="0 0 24 24"><path d="M9 2c-1.05 0-1.96.54-2.5 1.35L3.5 8.5C2.55 9.94 2 11.67 2 13.5 2 18.19 5.81 22 10.5 22h3C17.64 22 21 18.64 21 14.5v-1a2.5 2.5 0 0 0-2.5-2.5h-.09C18.16 9.84 17.09 8.5 15.5 8.5c-.17 0-.34.02-.5.05V6c0-1.1-.9-2-2-2h-.09A2.5 2.5 0 0 0 10.5 2H9zm0 2h1.5a.5.5 0 0 1 .5.5V10h1.5V6.5c0-.28.22-.5.5-.5s.5.22.5.5V11h1.5V9.5c0-.28.22-.5.5-.5s.5.22.5.5V14.5C16 17.54 13.54 20 10.5 20h-3C5.91 20 4 18.09 4 13.5c0-1.42.43-2.75 1.17-3.86L8.17 4.5A.5.5 0 0 1 9 4z"/></svg>
+          You don't have any devices
+        </div>
+      </div>
+
+      <!-- SCREENSHOTS -->
+      <div style="margin-bottom:28px;">
+        <div class="section-header">
+          <span class="section-title">Screenshots</span>
+        </div>
+        <div class="screenshots-wrap">
+          <div class="screenshots-track" id="screenshots">
+
+            <!-- Screenshot 1 -->
+            <div class="phone-mockup" onclick="openLightbox(0)">
+              <img src="assets/screenshot-1.webp" alt="Screenshot 1" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;" />
+            </div>
+
+            <!-- Screenshot 2 -->
+            <div class="phone-mockup" onclick="openLightbox(1)">
+              <img src="assets/screenshot-2.webp" alt="Screenshot 2" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;" />
+            </div>
+
+            <!-- Screenshot 3 -->
+            <div class="phone-mockup" onclick="openLightbox(2)">
+              <img src="assets/screenshot-3.webp" alt="Screenshot 3" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;" />
+            </div>
+
+            <!-- Screenshot 4 -->
+            <div class="phone-mockup" onclick="openLightbox(3)">
+              <img src="assets/screenshot-4.webp" alt="Screenshot 4" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;" />
+            </div>
+
+            <!-- Screenshot 5 -->
+            <div class="phone-mockup" onclick="openLightbox(4)">
+              <img src="assets/screenshot-5.webp" alt="Screenshot 5" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;" />
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="about-section">
+        <div class="section-header">
+          <span class="section-title">About this app</span>
+          <svg class="section-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        <p class="about-text collapsed" id="aboutText">
+          Stay connected with your campaigns, no matter where you are. The Meta Ads Manager app for iOS and Android lets you keep tabs on your ad campaigns and respond to performance changes quickly from your phone or tablet.<br><br>
+          With the Meta Ads Manager app, you can:<br>
+          • Monitor ad campaign performance with up-to-date metrics and charts<br>
+          • Edit existing ads or create new ones directly from the app<br>
+          • Review and approve ads on the go<br>
+          • Receive important notifications about your accounts, campaigns, ad sets, and ads<br>
+          • Manage your ad spending with access to billing information<br><br>
+          You must have a Facebook account to use this app. Meta Ads Manager is available for advertisers in all countries.
+        </p>
+        <span class="read-more" id="readMoreBtn" onclick="toggleAbout()">more</span>
+      </div>
+
+      <!-- RATINGS -->
+      <div class="ratings-section">
+        <div class="section-header">
+          <span class="section-title">Ratings and reviews</span>
+          <svg class="section-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        <p style="font-size:12px;color:var(--text-secondary);margin-bottom:16px;">Ratings and reviews are verified ⓘ</p>
+
+        <div class="ratings-overview">
+          <div class="big-rating">
+            <div class="big-rating-num">4.7</div>
+            <div class="stars-display">
+              <svg viewBox="0 0 24 24" class="star-filled"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="star-filled"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="star-filled"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="star-filled"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" class="star-half"><defs><linearGradient id="half-grad"><stop offset="70%" stop-color="#202124"/><stop offset="70%" stop-color="#dadce0"/></linearGradient></defs><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="rating-count">507K reviews</div>
+          </div>
+          <div class="rating-bars">
+            <div class="bar-row"><span class="bar-label">5</span><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div></div>
+            <div class="bar-row"><span class="bar-label">4</span><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div></div>
+            <div class="bar-row"><span class="bar-label">3</span><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div>
+            <div class="bar-row"><span class="bar-label">2</span><div class="bar-track"><div class="bar-fill" style="width:3%"></div></div></div>
+            <div class="bar-row"><span class="bar-label">1</span><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div></div>
+          </div>
+        </div>
+
+        <!-- REVIEW CARDS -->
+        <div class="reviews-list">
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer-avatar" style="background:#e91e63;">S</div>
+              <span class="reviewer-name">Sarah Mitchell</span>
+              <span class="review-meta">March 1, 2025</span>
+            </div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">This app has completely transformed how I manage my ad campaigns on the go. The interface is clean and the real-time metrics are incredibly helpful. Being able to approve and edit ads from my phone saves me so much time!</p>
+            <div class="review-helpful">
+              <span>Did you find this helpful?</span>
+              <button class="helpful-btn" onclick="markHelpful(this)">Yes</button>
+              <button class="helpful-btn">No</button>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer-avatar" style="background:#1565c0;">J</div>
+              <span class="reviewer-name">James Okafor</span>
+              <span class="review-meta">Feb 18, 2025</span>
+            </div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" style="fill:#dadce0;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">Great app overall. The campaign performance overview is excellent. My only complaint is occasional slowness when loading large datasets. Would love to see better filtering options for ad sets. Otherwise very solid.</p>
+            <div class="review-helpful">
+              <span>Did you find this helpful?</span>
+              <button class="helpful-btn" onclick="markHelpful(this)">Yes</button>
+              <button class="helpful-btn">No</button>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer-avatar" style="background:#00897b;">R</div>
+              <span class="reviewer-name">Rachel Torres</span>
+              <span class="review-meta">Jan 29, 2025</span>
+            </div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">Essential app for any digital marketer. I use it daily to track campaigns across multiple clients. Push notifications for budget alerts are a game changer. Five stars without hesitation.</p>
+            <div class="review-helpful">
+              <span>Did you find this helpful?</span>
+              <button class="helpful-btn" onclick="markHelpful(this)">Yes</button>
+              <button class="helpful-btn">No</button>
+            </div>
+          </div>
+        </div>
+
+        <button style="width:100%;margin-top:16px;padding:12px;border:1px solid var(--border);border-radius:50px;background:transparent;font-size:14px;font-weight:500;color:var(--text-primary);cursor:pointer;" onclick="showToast('Loading more reviews…')">See all reviews</button>
+      </div>
+
+      <!-- FEATURES -->
+      <div class="features-section">
+        <div class="section-header">
+          <span class="section-title">App features</span>
+        </div>
+        <div class="features-grid">
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Campaign Dashboard</h4>
+              <p>Monitor all active campaigns in one glance with real-time metrics</p>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Smart Alerts</h4>
+              <p>Get notified instantly about budget changes and performance drops</p>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Audience Insights</h4>
+              <p>Understand your target audience with detailed demographic data</p>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Performance Charts</h4>
+              <p>Visualize trends with interactive graphs and comparison tools</p>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Budget Control</h4>
+              <p>Adjust daily and lifetime budgets on the fly from anywhere</p>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div class="feature-chip-text">
+              <h4>Ad Approvals</h4>
+              <p>Review and approve pending ads from your mobile device</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- APP INFO TABLE -->
+      <div class="info-section">
+        <div class="section-header">
+          <span class="section-title">App info</span>
+          <svg class="section-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        <table class="info-table">
+          <tr><td>Version</td><td>399.0.0.31.101</td></tr>
+          <tr><td>Updated</td><td>February 26, 2025</td></tr>
+          <tr><td>Downloads</td><td>10,000,000+</td></tr>
+          <tr><td>Requires Android</td><td>Android 8.0 or higher</td></tr>
+          <tr><td>Developer</td><td>Meta Platforms, Inc.</td></tr>
+          <tr><td>App size</td><td>Varies with device</td></tr>
+          <tr><td>In-app purchases</td><td>No additional purchases</td></tr>
+          <tr><td>Content rating</td><td>Rated for 3+ ⓘ</td></tr>
+          <tr><td>Interactive elements</td><td>Users interact, Digital purchases</td></tr>
+        </table>
+      </div>
+
+      <!-- SIMILAR APPS -->
+      <div class="similar-section">
+        <div class="section-header">
+          <span class="section-title">Similar apps</span>
+          <svg class="section-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        <div class="similar-scroll">
+          <div class="similar-track">
+            <div class="similar-card" onclick="showToast('Opening Google Ads…')">
+              <div class="similar-icon" style="background:linear-gradient(135deg,#4285f4,#34a853);">📊</div>
+              <div class="similar-name">Google Ads</div>
+              <div class="similar-dev">Google LLC</div>
+              <div class="similar-rating"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.4</div>
+            </div>
+            <div class="similar-card" onclick="showToast('Opening Business Suite…')">
+              <div class="similar-icon" style="background:linear-gradient(135deg,#1877f2,#42b0ff);">📱</div>
+              <div class="similar-name">Meta Business Suite</div>
+              <div class="similar-dev">Meta Platforms</div>
+              <div class="similar-rating"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.5</div>
+            </div>
+            <div class="similar-card" onclick="showToast('Opening TikTok Ads…')">
+              <div class="similar-icon" style="background:linear-gradient(135deg,#010101,#ee1d52);">🎵</div>
+              <div class="similar-name">TikTok Ads Manager</div>
+              <div class="similar-dev">TikTok Pte. Ltd.</div>
+              <div class="similar-rating"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.2</div>
+            </div>
+            <div class="similar-card" onclick="showToast('Opening LinkedIn…')">
+              <div class="similar-icon" style="background:linear-gradient(135deg,#0077b5,#00a0dc);">💼</div>
+              <div class="similar-name">LinkedIn Campaign Mgr</div>
+              <div class="similar-dev">LinkedIn</div>
+              <div class="similar-rating"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.1</div>
+            </div>
+            <div class="similar-card" onclick="showToast('Opening Mailchimp…')">
+              <div class="similar-icon" style="background:linear-gradient(135deg,#ffe01b,#f26522);">📧</div>
+              <div class="similar-name">Mailchimp Email Marketing</div>
+              <div class="similar-dev">Mailchimp</div>
+              <div class="similar-rating"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /main-col -->
+
+    <!-- SIDEBAR (visible on ≥1024px via grid) -->
+    <div class="sidebar-card" id="sidebar">
+      <button class="install-btn" data-apk-path="assets/downloads/app-release.apk" onclick="handleInstall()" style="max-width:none;">Install</button>
+      <div style="text-align:center;margin-bottom:16px;">
+        <div style="font-size:26px;font-weight:400;font-family:'Google Sans',sans-serif;">4.7 ★</div>
+        <div style="font-size:12px;color:var(--text-secondary);">507K reviews</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;">
+        <div style="padding:12px 16px;border-bottom:1px solid var(--border);">
+          <div style="font-size:12px;color:var(--text-secondary);">Version</div>
+          <div style="font-size:14px;font-weight:500;">399.0.0.31.101</div>
+        </div>
+        <div style="padding:12px 16px;border-bottom:1px solid var(--border);">
+          <div style="font-size:12px;color:var(--text-secondary);">Updated</div>
+          <div style="font-size:14px;font-weight:500;">Feb 26, 2025</div>
+        </div>
+        <div style="padding:12px 16px;border-bottom:1px solid var(--border);">
+          <div style="font-size:12px;color:var(--text-secondary);">Downloads</div>
+          <div style="font-size:14px;font-weight:500;">10M+</div>
+        </div>
+        <div style="padding:12px 16px;">
+          <div style="font-size:12px;color:var(--text-secondary);">Content rating</div>
+          <div style="font-size:14px;font-weight:500;">Rated 3+</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /app-layout -->
+</div><!-- /container -->
+
+<!-- BOTTOM NAV (mobile) -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <div class="bn-item" onclick="switchTab(this,'Games')">
+      <!-- Gamepad / joystick icon -->
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5S14.67 12 15.5 12s1.5.67 1.5 1.5S16.33 15 15.5 15zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5S19.33 12 18.5 12z" fill="currentColor"/>
+      </svg>
+      <span>Games</span>
+    </div>
+    <div class="bn-item active" onclick="switchTab(this,'Apps')">
+      <!-- 2×2 grid of squares (Apps) -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="8" height="8" rx="1.5" fill="currentColor"/>
+        <rect x="13" y="3" width="8" height="8" rx="1.5" fill="currentColor"/>
+        <rect x="3" y="13" width="8" height="8" rx="1.5" fill="currentColor"/>
+        <rect x="13" y="13" width="8" height="8" rx="1.5" fill="currentColor"/>
+      </svg>
+      <span>Apps</span>
+    </div>
+    <div class="bn-item" onclick="switchTab(this,'Books')">
+      <!-- Book with ribbon bookmark -->
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2H8C6.9 2 6 2.9 6 4v16l5-2 5 2V4h2V2h-2 z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+        <path d="M6 4v16l5-2 5 2V4" stroke="currentColor" stroke-width="1.8" fill="none"/>
+        <rect x="6" y="2" width="12" height="18" rx="1" stroke="currentColor" stroke-width="1.8" fill="none"/>
+        <path d="M14 2v9l-3-1.5L8 11V2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span>Books</span>
+    </div>
+    <div class="bn-item" onclick="switchTab(this,'Kids')">
+      <!-- Star outline (Kids) -->
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2l2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.9l-5.8 3.05 1.11-6.45L2.62 8.81l6.48-.94L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span>Kids</span>
+    </div>
+  </div>
+</nav>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-nav lb-prev" onclick="lbNavigate(-1)">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
+  <div style="position:relative;">
+    <div class="lightbox-phone">
+      <div class="lightbox-screen" id="lightboxScreen"></div>
+    </div>
+  </div>
+  <button class="lb-nav lb-next" onclick="lbNavigate(1)">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+  <button class="lightbox-close" onclick="closeLightbox()">
+    <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+  </button>
+  <div class="lb-dots" id="lbDots"></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
